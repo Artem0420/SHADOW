@@ -8,9 +8,16 @@ namespace project1
 {
     class Program
     {
-        1488 1488 1488 1488
         static void Main(string[] args)
-        {
+        {фыаяМя
+                аы
+                А
+                ФЫВ
+                АФЫВ
+                А
+                Фа
+
+            Console.WriteLine("Ведит")
         }
     }
 }
