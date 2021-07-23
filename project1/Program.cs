@@ -9,15 +9,32 @@ namespace project1
     class Program
     {
         static void Main(string[] args)
-        {фыаяМя
-                аы
-                А
-                ФЫВ
-                АФЫВ
-                А
-                Фа
+        {
+            //dy1();
 
-            Console.WriteLine("Ведит")
+
         }
+        static void dy1()
+        {
+            Console.WriteLine("Ведитe число!");
+            string str;
+            str = Console.ReadLine();
+            Console.WriteLine(str);
+            int a;
+            bool resalt = int.TryParse(str, out a);
+            a.ToString();
+            if (resalt)
+            {
+                Console.WriteLine("Всё круто)))" + a);
+            }
+            else
+            {
+                Console.WriteLine("Ты меня обманул и всёл букву " + str + " (((((");
+                Console.WriteLine(a);
+            }
+
+            Console.ReadKey();
+        }
+
     }
 }
