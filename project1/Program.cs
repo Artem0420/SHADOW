@@ -11,7 +11,7 @@ namespace project1
         static void Main(string[] args)
         {
             //dy1();
-
+            converter();
 
         }
         static void dy1()
@@ -32,6 +32,83 @@ namespace project1
                 Console.WriteLine("Ты меня обманул и всёл букву " + str + " (((((");
                 Console.WriteLine(a);
             }
+
+            Console.ReadKey();
+        }
+
+        static void converter()
+        {
+           
+            const double dolor = 27.04;
+            const double evro = 31.82;
+            double evro1;
+            double dolor1;
+            double grivna;
+            double grivna1;
+            Console.WriteLine("Выберете какую валюту вы будете конвертировать\n1-$\n2-евро\n3-гривна");
+            int a1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("количество");
+            double b = double.Parse(Console.ReadLine());
+
+
+            switch (a1)
+            {
+                case 1:
+                    Console.WriteLine("вы выбрали $");
+                    Console.WriteLine("выберете в какую валюту конвертировать\n1-евро\n2-гривна");
+                    int a2 = int.Parse(Console.ReadLine());
+                    switch (a2)
+                    {
+                        case 1:
+                            grivna = b * dolor;
+                            evro1 = grivna / evro;
+                            Console.WriteLine(evro1);
+                            break;
+                        case 2:
+                            grivna = b * dolor;
+                            Console.WriteLine(grivna);
+                            break;
+                    }
+                    break;
+                case 2:
+                    Console.WriteLine("вы выбрали евро");
+                    Console.WriteLine("выберете в какую валюту конвертировать\n1-$\n2-гривна");
+                         int a3 = int.Parse(Console.ReadLine());
+                    switch(a3)
+                    {
+                        case 1:
+                            grivna1 = b * evro;
+                            dolor1 = grivna1 / dolor;
+                            Console.WriteLine(dolor1);
+                            break;
+                        case 2:
+                            grivna = b * evro;
+                            Console.WriteLine(grivna);
+                            break;
+
+                    }
+                    break;
+                case 3:
+                    Console.WriteLine("вы выбрали гривну");
+                    Console.WriteLine("выберете в какую валюту конвертировать\n1-$\n2-евро");
+                    int a4 = int.Parse(Console.ReadLine());
+                    switch(a4)
+                    {
+                        case 1:
+
+                            grivna = b/ dolor;
+                            Console.WriteLine(grivna);
+                            break;
+                        case 2:
+                            grivna = b / evro;
+                            Console.WriteLine(grivna);
+                            break;
+                    }
+
+                    break; 
+            }
+
+           
 
             Console.ReadKey();
         }
