@@ -14,7 +14,7 @@ namespace project1
             converter();
 
         }
-        static void dy1()
+        static void dy1()   
         {
             Console.WriteLine("Ведитe число!");
             string str;
