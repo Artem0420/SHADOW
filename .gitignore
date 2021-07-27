@@ -1,3 +1,5 @@
 
 *.cache
 project1/obj/
+bin/Debug/
+
