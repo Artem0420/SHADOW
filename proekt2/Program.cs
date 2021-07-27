@@ -10,34 +10,38 @@ namespace proekt2
     {
         static void Main(string[] args)
         {
-            string otvet = " ";
-            int limit = 0;
-            int interes = 1;
-            for (int i = 0; i < 50000; i++)
+         
+
+            while (true)
             {
+                string otvet = "";
+                string otvet1 = "";
+                int limit = 0;
+                int interes = 1;
                 
                 Console.WriteLine("Ведите сколько цифр вы хотитепроверить");
                 string imput = Console.ReadLine();
                 bool resul = int.TryParse(imput, out limit);
                 if (resul == true)
                 {
-                    while (interes<=limit)
+                    while (interes <= limit)
                     {
-                        
-                        
-                        Console.WriteLine("Веди "+interes+" чисел");
-                        double a = double.Parse(Console.ReadLine()).PadRight(10);
+
+
+                        Console.WriteLine("Веди " + interes + " чисел");
+                        double a = double.Parse(Console.ReadLine());
                         interes++;
-                        if (a%2==0)
+                        if (a % 2 == 0)
                         {
-                            string stroka =Convert.ToString(a);
-                            otvet = otvet + stroka;
-                            
+                            string stroka = Convert.ToString(a);
+                            otvet = otvet + " " + stroka;
+
 
                         }
                         else
                         {
-
+                            string stroka = Convert.ToString(a);
+                            otvet1 = otvet1 + " " + stroka;
                         }
 
                     }
@@ -45,16 +49,22 @@ namespace proekt2
                 }
                 else
                 {
-                    int g = 0;
-                    g = 2 - i;
+
                     Console.WriteLine("Ты всёл букву");
-                    Console.WriteLine("У тебя осталось " + g + " попыток ");
-              
+
+
                 }
-                Console.WriteLine(otvet);
+                Console.WriteLine("Ваши четные числа " + otvet);
+                Console.WriteLine("Ваши не четные числа " + otvet1);
+
+
+
+
+
+
+                Console.ReadKey();
             }
-            Console.Clear();
-            Console.ReadKey();
+           
         }
     }
 }
