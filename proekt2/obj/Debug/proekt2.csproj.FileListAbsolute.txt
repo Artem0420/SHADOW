@@ -1,0 +1,7 @@
+C:\git\SHADOW\proekt2\bin\Debug\proekt2.exe.config
+C:\git\SHADOW\proekt2\bin\Debug\proekt2.exe
+C:\git\SHADOW\proekt2\bin\Debug\proekt2.pdb
+C:\git\SHADOW\proekt2\obj\Debug\proekt2.csproj.AssemblyReference.cache
+C:\git\SHADOW\proekt2\obj\Debug\proekt2.csproj.CoreCompileInputs.cache
+C:\git\SHADOW\proekt2\obj\Debug\proekt2.exe
+C:\git\SHADOW\proekt2\obj\Debug\proekt2.pdb
